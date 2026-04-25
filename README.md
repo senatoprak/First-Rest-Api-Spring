@@ -39,11 +39,16 @@ Even though the ProductRepository interface is empty, how can we use methods lik
 Answer:
 This is possible due to the power of "Repository Abstraction" in Spring Data JPA:
 1-The ProductRepository extends the JpaRepository<Product, Long> interface.
+
 2-When the Spring Boot application starts, it scans this interface and automatically creates a Proxy Implementation at runtime.
+
 3-This generated class already contains the implementation for all standard database operations (save, delete, count, etc.). Therefore, the developer does not need to write manual SQL queries or implement these methods manually.
 
 🔧 Installation Instructions:
 1-Download or clone the project to your local machine.
+
 2-Update dependencies using Maven (pom.xml).
+
 3-Run the FirstRestApiSpringApplication.java file.
+
 4-Open the Swagger link to start testing the endpoints.
