@@ -1,3 +1,5 @@
+Creating a new project from scratch using Spring Initializr in Intellij
+
 📦 Product Management API (Spring Boot)
 This project was developed as part of the Java and Spring Framework course at Vistula University. 
 The primary goal is to build a professional REST API architecture that interacts with a database and includes a robust error-handling mechanism.
