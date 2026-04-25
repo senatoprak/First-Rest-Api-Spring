@@ -14,8 +14,8 @@ The primary goal is to build a professional REST API architecture that interacts
 
   🛠️ API Usage & Testing:
 1. Once the application is running, all tests can be performed via Swagger UI:
-2. 
-🔗 URL: http://localhost:8081/swagger-ui/index.html
+
+   🔗 URL: http://localhost:8081/swagger-ui/index.html
 
 <img width="1900" height="1021" alt="Screenshot 2026-04-25 110958" src="https://github.com/user-attachments/assets/f03cf82b-1103-4973-b5d1-5a921255363d" />
 That is what you will see after running.
@@ -43,6 +43,7 @@ Even though the ProductRepository interface is empty, how can we use methods lik
 Answer:
 
 This is possible due to the power of "Repository Abstraction" in Spring Data JPA:
+
 1-The ProductRepository extends the JpaRepository<Product, Long> interface.
 
 2-When the Spring Boot application starts, it scans this interface and automatically creates a Proxy Implementation at runtime.
