@@ -14,6 +14,7 @@ The primary goal is to build a professional REST API architecture that interacts
 
   🛠️ API Usage & Testing:
 1. Once the application is running, all tests can be performed via Swagger UI:
+2. 
 🔗 URL: http://localhost:8081/swagger-ui/index.html
 
 <img width="1900" height="1021" alt="Screenshot 2026-04-25 110958" src="https://github.com/user-attachments/assets/f03cf82b-1103-4973-b5d1-5a921255363d" />
@@ -32,11 +33,15 @@ Creating a new product named "macbook air".
 5. Error Handling & Delete (DELETE):
 <img width="1275" height="876" alt="Screenshot 2026-04-25 113909" src="https://github.com/user-attachments/assets/cc940b15-5a2c-4e97-bab7-4c1dc3dc87a8" />
 
+
 ❓ Theoretical Analysis: 
+
 Question:
+
 Even though the ProductRepository interface is empty, how can we use methods like save, findById, and findAll in the ProductService without any errors?
 
 Answer:
+
 This is possible due to the power of "Repository Abstraction" in Spring Data JPA:
 1-The ProductRepository extends the JpaRepository<Product, Long> interface.
 
@@ -45,6 +50,7 @@ This is possible due to the power of "Repository Abstraction" in Spring Data JPA
 3-This generated class already contains the implementation for all standard database operations (save, delete, count, etc.). Therefore, the developer does not need to write manual SQL queries or implement these methods manually.
 
 🔧 Installation Instructions:
+
 1-Download or clone the project to your local machine.
 
 2-Update dependencies using Maven (pom.xml).
